@@ -1,17 +1,22 @@
+# DAD - Development Accelerator Documents
+
 AI-assisted development system for Claude Code, Cursor, and other AI coding assistants.
 
 ## 🚀 Quick Start
 
-### Install as dev dependency
+### Install globally (recommended)
 ```bash
-npm install --save-dev dad
-# or
-yarn add -D dad
+# Install once, use anywhere
+npm install -g dad
+
+# Initialize in any project
+dad init
 ```
 
-### Initialize in your project
+### Or directly use npx
 ```bash
-npx dad init
+# Always uses latest version
+npx dad@latest init
 ```
 
 This will:
