@@ -1,0 +1,59 @@
+{
+  "name": "dad",
+  "version": "0.2.2",
+  "description": "Development Accelerator Documents (DAD) - AI-assisted development system for Claude, Cursor, and other AI coding assistants",
+  "main": "index.js",
+  "bin": {
+    "dad": "./bin/dad-cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "node scripts/post-install.js",
+    "prepublishOnly": "node scripts/prepare-publish.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessekaff/dad.git"
+  },
+  "keywords": [
+    "ai",
+    "development",
+    "claude",
+    "cursor",
+    "documentation",
+    "automation",
+    "developer-tools",
+    "ai-assistant",
+    "code-generation",
+    "productivity"
+  ],
+  "author": "Jesse Kaffenberger",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jessekaff/dad/issues"
+  },
+  "homepage": "https://github.com/jessekaff/dad#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.0.0",
+    "fs-extra": "^11.1.1",
+    "inquirer": "^8.2.6",
+    "ora": "^5.4.1",
+    "semver": "^7.5.4"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "scripts/",
+    ".dad/",
+    "agents/",
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ]
+}

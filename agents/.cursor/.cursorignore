@@ -1,0 +1,84 @@
+# Cursor AI Context Optimization
+
+# Build outputs and caches
+**/node_modules/
+**/dist/
+**/out/
+**/.next/
+**/build/
+**/.turbo/
+**/*.tsbuildinfo
+
+# Package manager files
+yarn.lock
+package-lock.json
+
+# Environment files (contain sensitive data)
+**/.env
+**/.env.*
+!**/.env.example
+
+# IDE and editor files
+**/.vscode/
+**/.idea/
+**/*.swp
+**/*.swo
+**/.*~
+
+# OS generated files
+**/.DS_Store
+**/Thumbs.db
+**/*.log
+
+# Test coverage
+**/coverage/
+**/.nyc_output/
+
+# Mobile specific
+**/ios/Pods/
+**/ios/build/
+**/android/build/
+**/android/.gradle/
+**/android/app/build/
+
+# Expo
+**/.expo/
+**/expo-env.d.ts
+
+# Generated files
+**/generated/
+**/*.generated.*
+
+# Large assets that don't need AI context
+**/assets/images/
+**/assets/videos/
+**/public/images/
+**/public/videos/
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.gif
+**/*.svg
+**/*.mp4
+**/*.mov
+
+# Documentation that AI should use selectively
+# (Keep .dad/ and key markdown files available)
+**/CHANGELOG.md
+**/LICENSE
+**/yarn-error.log
+
+# Test files (include only when relevant to current task)
+**/__tests__/
+**/*.test.ts
+**/*.test.tsx
+**/*.spec.ts
+**/*.spec.tsx
+**/jest.config.*
+**/testing-library/
+
+# Lint and format configs (AI should reference DAD standards instead)
+**/.eslintrc.*
+**/.prettierrc.*
+**/prettier.config.*
+**/eslint.config.*

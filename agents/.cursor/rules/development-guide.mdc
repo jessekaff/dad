@@ -1,0 +1,132 @@
+# DAD - Cursor AI Development Rules
+
+## Project Overview
+
+This project uses the **Development Accelerator Documentation (DAD)** system. **ALWAYS reference the `.dad/` directory FIRST** before making any code changes or architectural decisions.
+
+## 📚 Development Accelerator Documentation (DAD) System
+
+DAD provides structured context to accelerate AI-assisted development. The `.dad/` folder contains all the information you need about this project's architecture, standards, and workflows.
+
+## 🎯 Context Navigation by Task Type
+
+**Always reference `.dad/` first, then project files as needed.**
+
+### For New Features
+1. **Product Context**: `.dad/product/mission-lite.md` - Understand project goals
+2. **Roadmap Alignment**: `.dad/product/roadmap.md` - Check feature priorities  
+3. **Tech Stack**: `.dad/product/tech-stack.md` - Technology choices and constraints
+4. **Architecture Decisions**: `.dad/product/decisions.md` - Past technical decisions
+5. **Development Standards**: `.dad/standards/best-practices.md` - Implementation approach
+6. **Code Patterns**: `.dad/standards/` - Framework-specific conventions
+
+### For Bug Fixes  
+1. **Development Standards**: `.dad/standards/best-practices.md` - Debugging approach
+2. **Tech Stack**: `.dad/product/tech-stack.md` - Technology-specific solutions
+3. **Architecture Decisions**: `.dad/product/decisions.md` - System constraints
+4. **Project README**: For setup and environment issues
+
+### For Feature Enhancements
+1. **Product Decisions**: `.dad/product/decisions.md` - Existing architectural choices
+2. **Code Standards**: `.dad/standards/` - Consistency requirements
+3. **Best Practices**: `.dad/standards/best-practices.md` - Enhancement approach
+4. **Tech Stack**: `.dad/product/tech-stack.md` - Technology constraints
+
+### For Code Refactoring
+1. **Best Practices**: `.dad/standards/best-practices.md` - Refactoring principles
+2. **Code Style**: `.dad/standards/` - Target patterns
+3. **Tech Stack**: `.dad/product/tech-stack.md` - Technology guidelines
+4. **Architecture Decisions**: `.dad/product/decisions.md` - Maintain consistency
+
+### For Setup/Configuration Issues
+1. **Project README**: Development setup instructions
+2. **Tech Stack**: `.dad/product/tech-stack.md` - Technology requirements
+3. **Standards**: `.dad/standards/` - Configuration guidelines
+
+## 🔧 Development Guidelines
+
+### Code Generation Principles
+
+1. **DAD-First Development** - Always check `.dad/` directory for project context and standards before coding
+2. **Follow DAD Standards** - Apply `.dad/standards/` conventions consistently across all generated code
+3. **Use Existing Patterns** - Check existing packages and components before creating new utilities
+4. **Task-Oriented Approach** - Use `.dad/instructions/` workflows for development processes
+5. **Maintain Consistency** - Follow established patterns in the codebase and DAD documentation
+
+### Workflow Requirements
+
+#### Before Starting Any Task
+1. **Identify Task Type** - Use the Context Navigation guide above
+2. **Load Relevant Context** - Read the specific DAD files for your task type
+3. **Check Existing Patterns** - Review existing packages for similar solutions
+4. **Apply Standards** - Follow the appropriate standards from your context loading
+
+#### During Development
+- Follow the coding conventions in `.dad/standards/`
+- Use existing shared packages before creating new utilities
+- Maintain consistency with patterns established in DAD documentation
+- Reference `.dad/product/decisions.md` for architectural guidance
+
+#### Post-Task Analysis
+Analyze if any new patterns or solutions should be documented in DAD:
+1. **Context Gap Analysis** - Was needed information missing from DAD?
+2. **Workflow Pattern Recognition** - Could this task be templated for future use?
+3. **Standards Discovery** - Were new patterns established that should be documented?
+4. **Decision Recording** - What technical decisions were made that should be preserved?
+
+**Only suggest DAD improvements when they meet strict criteria** - most tasks should have no suggestions. Always ask permission before making any DAD updates.
+
+## 🏗️ Project Structure
+
+This project structure is defined in `.dad/product/tech-stack.md`. Common patterns include:
+
+```
+project/
+├── .dad/                 # Development Accelerator Documentation
+├── src/                  # Source code
+├── tests/                # Test files
+├── docs/                 # Additional documentation
+└── package.json          # Project configuration
+```
+
+Check `.dad/product/tech-stack.md` for your project's specific structure.
+
+## 🚨 Critical Rules
+
+1. **Never modify DAD files without explicit permission**
+2. **Always reference DAD first** before making architectural decisions
+3. **Use task-type specific context loading** for efficiency
+4. **Follow established patterns** rather than creating new ones
+5. **Suggest DAD improvements sparingly** - only when truly beneficial
+
+## 📦 Shared Resources
+
+Check `.dad/product/tech-stack.md` and existing project structure for:
+- Shared utility packages
+- Common components
+- Configuration files
+- Testing utilities
+
+Always check these resources for existing functionality before creating new utilities.
+
+## 🎭 DAD Commands
+
+Use these commands for structured development workflows:
+
+- `@plan-product` - Initialize or analyze product documentation
+- `@plan-task [feature]` - Create detailed feature specifications
+- `@execute-task [spec]` - Implement planned features systematically
+
+## 📋 Quick Reference
+
+**Most Important Files:**
+- `.dad/product/mission-lite.md` - Project overview
+- `.dad/standards/best-practices.md` - Development guidelines
+- `.dad/product/tech-stack.md` - Technology stack and structure
+
+**For Complex Tasks:**
+- `.dad/instructions/core/` - Detailed workflow instructions
+
+---
+
+**Remember**: DAD is the source of truth for this project. When in doubt, reference the appropriate DAD files based on your task type.
